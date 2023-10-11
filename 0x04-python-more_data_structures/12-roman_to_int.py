@@ -20,9 +20,9 @@ def roman_to_int(roman_string):
         value = roman_numerals[letter]
 
         if value >= prev_value:
-            sum += value  # Add the current value if it's greater or equal to the previous value
+            sum += value
         else:
-            sum -= value  # Subtract the current value if it's less than the previous value
+            sum -= value
 
         prev_value = value
 
