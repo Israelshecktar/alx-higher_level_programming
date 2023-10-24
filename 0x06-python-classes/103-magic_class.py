@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 """Class that performs operations on a radius"""
-
-
 import math
 
 
