@@ -24,7 +24,7 @@ class Rectangle:
         if height < 0:
             raise ValueError("height must be >= 0")
 
-        self.height = height
+        self.__height = height
 
     @property
     def width(self):
