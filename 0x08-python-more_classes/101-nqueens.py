@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 import sys
+"""Function to print the result in the specified format"""
+
 
 def print_result(board):
     res = []
@@ -9,6 +11,8 @@ def print_result(board):
 
 
 def is_valid(board, current_queen):
+    """Function to check if the current queen placement is valid"""
+
     for queen in range(current_queen):
         if (board[queen] == board[current_queen] or
                 board[queen] - queen == board[current_queen] - current_queen or
@@ -16,6 +20,8 @@ def is_valid(board, current_queen):
             return False
     return True
 
+
+# Recursive function to place queens on the board
 
 def place_queens(board, n, current_queen):
     if current_queen == n:
