@@ -30,6 +30,5 @@ class TestMaxInteger(unittest.TestCase):
         self.assertRaises(TypeError, max_integer, [1, 2], [], [3, 4])
         self.assertIsNone(max_integer([]))
 
-
 if __name__ == '__main__':
     unittest.main()
