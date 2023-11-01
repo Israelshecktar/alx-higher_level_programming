@@ -10,6 +10,6 @@ import numpy
 
 
 def lazy_matrix_mul(m_a, m_b):
-
-    # Convert the result back to a list and return
+    """Convert the result back to a list and return
+    """
     return np.matmul(m_a, m_b)
