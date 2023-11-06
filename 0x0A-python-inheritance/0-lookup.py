@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+module for printing available attributes and methods
+"""
 
 
 def lookup(obj):
