@@ -1,4 +1,4 @@
-S## Python - Input/Output
+## Python - Input/Output
 This project contains Python scripts and test cases that demonstrate how to work with input and output operations in Python. The scripts cover topics such as reading and writing files, JSON serialization and deserialization, and documentation.
 
 ## Requirements
