@@ -2,7 +2,7 @@
 This project contains Python scripts and test cases that demonstrate how to work with input and output operations in Python. The scripts cover topics such as reading and writing files, JSON serialization and deserialization, and documentation.
 
 ## Requirements
-```c
+```html
 Python Scripts
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
