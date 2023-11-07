@@ -1,7 +1,8 @@
-## Python - Input/Output
+S## Python - Input/Output
 This project contains Python scripts and test cases that demonstrate how to work with input and output operations in Python. The scripts cover topics such as reading and writing files, JSON serialization and deserialization, and documentation.
 
 ## Requirements
+```c
 Python Scripts
 Allowed editors: vi, vim, emacs
 All your files will be interpreted/compiled on Ubuntu 20.04 LTS using python3 (version 3.8.5)
@@ -21,6 +22,7 @@ All your modules should have a documentation (python3 -c ‘print(import(“my_m
 All your classes should have a documentation (python3 -c ‘print(import(“my_module”).MyClass.doc)’)
 All your functions (inside and outside a class) should have a documentation (python3 -c ‘print(import(“my_module”).my_function.doc)’ and python3 -c ‘print(import(“my_module”).MyClass.my_function.doc)’)
 A documentation is not a simple word, it’s a real sentence explaining what’s the purpose of the module, class or method (the length of it will be verified)
+```
 The following files are included in this project:
 
 # 0-read_file.py: A function that reads a text file (UTF8) and prints it to stdout.
