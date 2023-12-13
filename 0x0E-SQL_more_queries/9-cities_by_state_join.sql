@@ -1,10 +1,6 @@
--- Use the database hbtn_0d_usa
-USE hbtn_0d_usa;
-
--- List the cities by states
-SELECT cities.id, cities.name, states.name
--- Join the cities and states tables on the state_id column
-FROM cities
-JOIN states ON cities.state_id = states.id
--- Sort the results by the cities.id column
-ORDER BY cities.id;
+-- This command lists all cities contained in the database hbtn_0d_usa.
+SELECT c.`id`, c.`name`, s.`name`
+  FROM `cities` AS c
+       INNER JOIN `states` AS s
+       ON c.`state_id` = s.`id`
+ ORDER BY c.`id`;
