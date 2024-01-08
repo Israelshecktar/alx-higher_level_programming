@@ -1,12 +1,11 @@
 #!/usr/bin/node
-// script that prints the addition of 2 integers
-
+// This script prints the addition of 2 integers
+const myArgs = process.argv.slice(2);
 function add (a, b) {
-  return a + b;
+  return parseInt(a) + parseInt(b);
 }
-
-const num1 = +process.argv[2];
-const num2 = +process.argv[3];
-const sum = add(num1, num2);
-
-console.log('The sum is ' + sum);
+if (myArgs.lenght < 2) {
+  console.log('NaN');
+} else {
+  console.log(add(myArgs[0], myArgs[1]));
+}
