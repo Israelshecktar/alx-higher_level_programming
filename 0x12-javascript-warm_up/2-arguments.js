@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // A script that prints a message depending on the number of arguments
 
-const args = process.argv.slice(2);
+const args = process.argv;
 if (args.length === 0) {
   console.log('No argument');
 } else if (args.length === 1) {
