@@ -1,4 +1,6 @@
 #!/usr/bin/node
+// script checks for arguments
+
 let numArgs = process.argv.length - 2;
 if (numArgs === 0) {
   console.log('No argument');
