@@ -1,4 +1,3 @@
 #!/bin/bash
-# This script takes a URL as input and displays
-
-url=$1 size=$(curl -si $url | awk '/Content-Length/{print $2}') echo $size
+# This script takes in a URL, sends a request to that URL, and displays
+curl -sI "$1" | grep Content-Length | cut -d " " -f 2
