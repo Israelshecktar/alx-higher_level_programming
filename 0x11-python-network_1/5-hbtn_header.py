@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Takes in a URL, sends a request to the URL and displays the valye"""
+"""Takes in a URL, sends a request to the URL and displays the value"""
 
 import sys
 import requests
@@ -14,9 +14,5 @@ if __name__ == "__main__":
     # Get a dictionary of the response headers
     headers = response.headers
 
-    # Get the value of the X-Request-Id variable
-    x_request_id = headers.get("X-Request-Id")
-
-    # Display the value
-    print(x_request_id)
-
+    # Get the value of the X-Request-Id variable and display it
+    print(headers.get("X-Request-Id"))
