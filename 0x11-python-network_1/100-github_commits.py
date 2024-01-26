@@ -11,8 +11,7 @@ if __name__ == "__main__":
     owner = sys.argv[2] if len(sys.argv) > 2 else ""
 
     # Send a GET request to the GitHub API endpoint with the query parameters
-    response = requests.get("https://api.github.com/repos/{}/{}/commits".format
-            (owner, repo), params={"per_page": 10})
+    response = requests.get("https://api.github.com/repos/{}/{}/commits".format(owner, repo), params={"per_page": 10})
 
     # Get the body of the response as a JSON object
     json_obj = response.json()

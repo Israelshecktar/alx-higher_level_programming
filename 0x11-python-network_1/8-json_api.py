@@ -10,7 +10,8 @@ if __name__ == "__main__":
     letter = sys.argv[1] if len(sys.argv) > 1 else ""
 
     # Send a POST request to the URL with the letter as a parameter
-    response = requests.post("http://0.0.0.0:5000/search_user", data={"q": letter})
+    url = "http://0.0.0.0:5000/search_user"
+    response = requests.post(url, data={"q": letter})
 
     # Try to get the body of the response as a JSON object
     try:
@@ -23,4 +24,3 @@ if __name__ == "__main__":
     # If the JSON object is invalid, display Not a valid JSON
     except ValueError:
         print("Not a valid JSON")
-
